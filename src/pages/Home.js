@@ -1,5 +1,7 @@
+import { Search } from "../components/Search/Search"
+
 export const Home = () => {
 	return (
-		<h1>Hello Wars!</h1>
+		<Search/>
 	)
 }
