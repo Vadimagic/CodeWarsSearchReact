@@ -1,6 +1,7 @@
 .navbar {
+	width: 100vw;
 	padding-left: 2rem;
-	height: 60px;
+	min-height: 60px;
 	background-color: rgb(196, 57, 57);
 	color: #fff;
 	display: flex;
@@ -18,11 +19,20 @@
 	flex-wrap: wrap;
 	&__item {
 		margin-right: 20px;
+		margin-bottom: 10px;
 		&:last-child {
 			margin-right: 0;
 		}
 	}
 	&__link {
 		color: rgb(255, 227, 227);
+	}
+}
+
+@media(max-width: 600px) {
+	.nav {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
 	}
 }
