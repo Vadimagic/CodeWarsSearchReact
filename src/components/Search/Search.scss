@@ -3,8 +3,15 @@
 }
 
 .search__control {
+	background: #171719;
 	width: 100%;
 	font-size: 18px;
 	border-radius: 5px;
+	border: 3px solid #B1361E;
 	padding: 10px;
+	outline: none;
+	transition: border .5s;
+	&:focus {
+		border: 3px solid #dd4729;
+	}
 }
