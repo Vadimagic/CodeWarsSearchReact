@@ -19,7 +19,6 @@
 	flex-wrap: wrap;
 	&__item {
 		margin-right: 20px;
-		margin-bottom: 10px;
 		&:last-child {
 			margin-right: 0;
 		}
@@ -32,5 +31,6 @@
 @media(max-width: 600px) {
 	.nav {
 		flex-direction: column;
+		margin-bottom: 10px;
 	}
 }
