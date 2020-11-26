@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { Nav } from './Nav'
 import './Navbar.scss'
 
 export const Navbar = () => {
@@ -8,11 +8,7 @@ export const Navbar = () => {
 			<div className="navbar__brand">
 				Codewars Search
 			</div>
-			<ul className="navbar__nav nav">
-				<li className="nav__item">
-					<NavLink to="/" exact className="nav__link">Главная</NavLink>
-				</li>
-			</ul>
+			<Nav/>
 		</nav>
 	)
 }
