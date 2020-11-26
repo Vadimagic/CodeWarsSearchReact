@@ -1,6 +1,7 @@
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import { Navbar } from "./components/Navbar/Navbar";
-import { Home } from "./pages/Home";
+import { Home } from "./pages/Home/Home";
+import { User } from './pages/User/User'
 import './App.scss'
 
 
@@ -11,6 +12,7 @@ function App() {
 			<div className="container">
 				<Switch>
 					<Route path="/" exact component={Home}/>
+					<Route path="/user" exact component={User}/>
 					<Redirect to="/"/>
 				</Switch>
 			</div>
