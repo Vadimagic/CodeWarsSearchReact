@@ -8,13 +8,26 @@
 		font-size: 1.2rem;
 		line-height: 1.6rem;
 	}
+	&__link-list {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		width: 320px;
+	}
 	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		margin: 10px;
+		padding: 10px;
+		border-radius: 10px;
+		background-color: #171719;
 	}
 	&__img {
 		height: 30px;
 		margin-right: 20px;
 	}
 	&__href {
+		color: #B1361E;
 	}
 }

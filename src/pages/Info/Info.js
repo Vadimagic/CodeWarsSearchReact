@@ -9,6 +9,7 @@ export const Info = () => {
 				SPA приложение, написанное на React + React Hooks.
 				Представляет из себя поиск информации с ресурса: Codewars (решение задач по программированию)
 			</p>
+			<div className="jumbotron__link-list">
 				<div className="jumbotron__link">
 					<img className="jumbotron__img" src="" alt="Codewars" />
 					<Link className="jumbotron__href" to="/users/Vadimagic">Мой Codewars</Link>
@@ -17,6 +18,7 @@ export const Info = () => {
 					<img className="jumbotron__img" src="" alt="Codewars" />
 					<a className="jumbotron__href" href="https://www.codewars.com/users/Vadimagic" target="_blank" rel="noreferrer">Мой GitHub</a>
 				</div>
+			</div>
 		</div>
 	)
 }
