@@ -1,10 +1,10 @@
 import { Search } from "../../components/Search/Search"
 
-export const Home = () => {
+export const Kata = () => {
 	return (
 		<>
 			<Search/>
-			HOME
+			KATA
 		</>
 	)
 }
