@@ -16,7 +16,7 @@ export const Info = () => {
 				</div>
 				<div className="jumbotron__link">
 					<img className="jumbotron__img" src="./assets/img/github.svg" alt="Codewars" />
-					<a className="jumbotron__href" href="https://www.codewars.com/users/Vadimagic" target="_blank" rel="noreferrer">Мой GitHub</a>
+					<a className="jumbotron__href" href="https://github.com/Vadimagic" target="_blank" rel="noreferrer">Мой GitHub</a>
 				</div>
 			</div>
 		</div>

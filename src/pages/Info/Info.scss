@@ -12,7 +12,7 @@
 		margin-top: 20px;
 		display: flex;
 		flex-direction: column;
-		width: 320px;
+		max-width: 320px;
 	}
 	&__link {
 		display: flex;
@@ -26,8 +26,13 @@
 	&__img {
 		height: 30px;
 		margin-right: 20px;
+		background: radial-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 60%, transparent 60%);
 	}
 	&__href {
 		color: #B1361E;
+		transition: color .3s ease;
+		&:hover {
+			color: #dd4729;
+		}
 	}
 }
