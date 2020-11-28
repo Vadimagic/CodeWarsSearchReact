@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .jumbotron {
 	margin-top: 20px;
 	color: rgb(250,250,250);
@@ -21,7 +23,7 @@
 		margin: 10px;
 		padding: 10px;
 		border-radius: 10px;
-		background-color: #171719;
+		background-color: $black;
 	}
 	&__img {
 		height: 30px;
@@ -29,10 +31,10 @@
 		background: radial-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 60%, transparent 60%);
 	}
 	&__href {
-		color: #B1361E;
+		color: $red;
 		transition: color .3s ease;
 		&:hover {
-			color: #dd4729;
+			color: $red-active;
 		}
 	}
 }
