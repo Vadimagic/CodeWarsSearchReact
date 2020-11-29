@@ -11,6 +11,14 @@ const withCreds = url => {
 }
 
 export const CodewarsState = ({children}) => {
+	const initialState = {
+		search: '',
+		user: {},
+		users: []
+	}
+
+	const [state, dispatch] = useReducer(codewarsReducer)
+
 	return (
 		<CodewarsContext.Provider value={}>
 			{children}
