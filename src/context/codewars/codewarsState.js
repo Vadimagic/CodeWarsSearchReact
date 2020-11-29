@@ -31,8 +31,13 @@ export const CodewarsState = ({children}) => {
 		})
 	}
 
+	const { search, user, users } = state
+
 	return (
-		<CodewarsContext.Provider value={}>
+		<CodewarsContext.Provider value={{
+			searchName,
+			search, user, users
+		}}>
 			{children}
 		</CodewarsContext.Provider>
 	)
