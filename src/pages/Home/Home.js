@@ -4,7 +4,7 @@ import { CodewarsContext } from "../../context/codewars/codewarsContext"
 
 export const Home = () => {
 	const { users } = useContext(CodewarsContext)
-console.log(users)
+	
 	return (
 		<>
 			<Search/>
@@ -16,7 +16,7 @@ console.log(users)
 				<div className="user-list">
 					{users.map( user => (
 						<div className="user" key={user.id}>
-							Vadimmmmm
+							{user.id}
 						</div>
 					))}
 				</div>

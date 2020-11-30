@@ -36,8 +36,6 @@ export const CodewarsState = ({children}) => {
 		})
 	}
 
-	console.log(state)
-
 	const { search, user, users } = state
 
 	return (
