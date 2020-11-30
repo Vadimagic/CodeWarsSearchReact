@@ -6,6 +6,8 @@ export const Search = () => {
 	const [value, setValue] = useState('')
 	const codewars = useContext(CodewarsContext)
 
+	console.log(codewars)
+
 	const onSubmit = event => {
 		if (event.key !== 'Enter') {
 			return

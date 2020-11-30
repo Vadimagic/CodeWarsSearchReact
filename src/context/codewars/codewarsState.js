@@ -14,7 +14,12 @@ export const CodewarsState = ({children}) => {
 	const initialState = {
 		search: '',
 		user: {},
-		users: []
+		users: [
+			{id : 1},
+			{id : 2},
+			{id : 3},
+			{id : 4},
+		]
 	}
 
 	const [state, dispatch] = useReducer(codewarsReducer, initialState)
@@ -30,6 +35,8 @@ export const CodewarsState = ({children}) => {
 			search: value
 		})
 	}
+
+	console.log(state)
 
 	const { search, user, users } = state
 
