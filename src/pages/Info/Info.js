@@ -10,14 +10,14 @@ export const Info = () => {
 				Представляет из себя поиск информации с ресурса: Codewars (решение задач по программированию)
 			</p>
 			<div className="jumbotron__link-list">
-				<div className="jumbotron__link">
+				<Link className="jumbotron__link" to="/users/Vadimagic">
 					<img className="jumbotron__img" src="./assets/img/codewars.png" alt="Codewars" />
-					<Link className="jumbotron__href" to="/users/Vadimagic">Мой Codewars</Link>
-				</div>
-				<div className="jumbotron__link">
+					<span className="jumbotron__href">Мой Codewars</span>
+				</Link>
+				<a className="jumbotron__link"  href="https://github.com/Vadimagic" target="_blank" rel="noreferrer">
 					<img className="jumbotron__img" src="./assets/img/github.svg" alt="Codewars" />
-					<a className="jumbotron__href" href="https://github.com/Vadimagic" target="_blank" rel="noreferrer">Мой GitHub</a>
-				</div>
+					<span className="jumbotron__href">Мой GitHub</span>
+				</a>
 			</div>
 		</div>
 	)
