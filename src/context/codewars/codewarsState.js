@@ -7,7 +7,7 @@ import { codewarsReducer } from './codewarsReducer'
 const CLIENT_ID = process.env.REACT_APP_CLIENT_ID
 console.log(CLIENT_ID)
 const withCreds = url => {
-	return `?${url}access_key=${CLIENT_ID}`
+	return `${url}?access_key=${CLIENT_ID}`
 }
 
 export const CodewarsState = ({children}) => {
@@ -27,8 +27,10 @@ export const CodewarsState = ({children}) => {
 
 	const searchName = async value => {
 		const response = await axios.get(
-			withCreds(`https://www.codewars.com/users`)
+			withCreds(`https://www.codewars.com/api/v1/users/${value}`)
 		)
+
+		console.log(response)
 
 		dispatch({
 			type: SEARCH_USERS,
