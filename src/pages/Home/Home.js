@@ -11,7 +11,7 @@ export const Home = () => {
 			<Search/>
 			HOME
 
-			{
+			{/* {
 				(users[0])
 				&& 
 				<div className="user-list">
@@ -29,7 +29,7 @@ export const Home = () => {
 						</div>
 					))}
 				</div>
-			}
+			} */}
 		</>
 	)
 }

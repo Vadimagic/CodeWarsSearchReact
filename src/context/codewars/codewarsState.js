@@ -4,10 +4,10 @@ import { SEARCH_USERS } from '../types'
 import { CodewarsContext } from './codewarsContext'
 import { codewarsReducer } from './codewarsReducer'
 
-const ACCESS_KEY = process.env.SOME_API_KEY
-
+const CLIENT_ID = process.env.REACT_APP_CLIENT_ID
+console.log(CLIENT_ID)
 const withCreds = url => {
-	return `${url}access_key=${ACCESS_KEY}`
+	return `?${url}access_key=${CLIENT_ID}`
 }
 
 export const CodewarsState = ({children}) => {
