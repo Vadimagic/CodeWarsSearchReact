@@ -26,6 +26,10 @@
 	}
 	&__link {
 		color: $white;
+		transition: color .3s ease;
+		&_active {
+			color: $red-active;
+		}
 	}
 }
 
