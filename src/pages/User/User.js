@@ -4,7 +4,6 @@ export const User = () => {
 	return (
 		<>
 			<Search/>
-			USER
 		</>
 	)
 }

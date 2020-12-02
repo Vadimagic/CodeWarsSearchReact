@@ -4,7 +4,6 @@ export const Kata = () => {
 	return (
 		<>
 			<Search/>
-			KATA
 		</>
 	)
 }

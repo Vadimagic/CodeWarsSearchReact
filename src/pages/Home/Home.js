@@ -9,7 +9,6 @@ export const Home = () => {
 	return (
 		<>
 			<Search/>
-			HOME
 
 			{/* {
 				(users[0])
