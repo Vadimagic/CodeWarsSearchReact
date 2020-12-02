@@ -30,8 +30,6 @@ export const CodewarsState = ({children}) => {
 			withCreds(`https://www.codewars.com/api/v1/users/${value}`)
 		)
 
-		console.log(response)
-
 		dispatch({
 			type: SEARCH_USERS,
 			payload: response.data.items,
